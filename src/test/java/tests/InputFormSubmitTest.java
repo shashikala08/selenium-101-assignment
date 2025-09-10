@@ -15,10 +15,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
+import utils.LamdaTestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class InputFormSubmitTest {
+public class InputFormSubmitTest extends LamdaTestBase {
 	
 	 WebDriver driver;
 	    WebDriverWait wait;
@@ -46,7 +46,8 @@ public class InputFormSubmitTest {
 
 	        // Step 2: Click Submit without filling anything
 	        WebElement submitBtn = wait.until(
-	                ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='submit'])[2]"))
+	                ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='submit'])[2]"
+	                		+ ""))
 	        );
 	        submitBtn.click();
 

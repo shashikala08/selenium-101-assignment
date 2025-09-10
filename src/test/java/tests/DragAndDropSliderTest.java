@@ -16,8 +16,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.LamdaTestBase;
 
-public class DragAndDropSliderTest {
+public class DragAndDropSliderTest extends LamdaTestBase{
 	WebDriver driver;
     WebDriverWait wait;
     Actions actions;

@@ -15,8 +15,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.LamdaTestBase;
 
-public class SimpleFormDemoTest {
+public class SimpleFormDemoTest extends LamdaTestBase {
 
 	WebDriver driver;
     WebDriverWait wait;
